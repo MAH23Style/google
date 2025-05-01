@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <title>Google Games and Tools</title>
+    <style>
+      :root {
+        --bg: #f8f9fa;
+        --text: #333;
+        --card: #ffffffcc;
+        --link: #4db6ac;
+        --link-hover: #00796b;
+      }
+
+      body.dark {
+        --bg: #121212;
+        --text: #eee;
+        --card: #1e1e1ecc;
+        --link: #26a69a;
+        --link-hover: #80cbc4;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        padding: 1rem 2rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: var(--link-hover);
+      }
+
+      #darkModeToggle {
+        padding: 0.5rem 1rem;
+        background: var(--link);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      #darkModeToggle:hover {
+        background: var(--link-hover);
+      }
+
+      #searchInput {
+        margin: 1rem 0;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        width: 80%;
+        max-width: 400px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        padding: 2rem;
+        max-width: 1200px;
+        width: 100%;
+      }
+
+      .games,
+      .tools {
+        background-color: var(--card);
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex: 1 1 400px;
+        min-width: 300px;
+        transition: background 0.3s;
+      }
+
+      h2 {
+        border-bottom: 2px solid var(--link);
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        background-color: var(--link);
+        color: white;
+        padding: 0.8rem 1rem;
+        border-radius: 8px;
+        margin: 0.5rem 0;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      a:hover {
+        background-color: var(--link-hover);
+        transform: translateY(-2px);
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        header {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Google Games and Tools</h1>
+      <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search games or tools..."
+    />
+
+    <div class="container">
+      <div class="games">
+        <h2>Games</h2>
+        <a href="https://www.google.com/search?q=block+breaker" target="_blank"
+          >Block Breaker</a
+        >
+        <a href="https://www.google.com/search?q=memory+game" target="_blank"
+          >Memory Game</a
+        >
+        <a href="https://www.google.com/search?q=tic+tac+toe" target="_blank"
+          >Tic Tac Toe</a
+        >
+        <a href="https://www.google.com/search?q=solitaire" target="_blank"
+          >Solitaire</a
+        >
+        <a href="https://www.google.com/search?q=spin+a+dreidel" target="_blank"
+          >Spin a Dreidel</a
+        >
+        <a href="https://www.google.com/search?q=fun+facts" target="_blank"
+          >Fun Facts</a
+        >
+        <a href="https://www.google.com/search?q=minesweeper" target="_blank"
+          >MineSweeper</a
+        >
+        <a href="https://www.google.com/search?q=earth+day+quiz" target="_blank"
+          >Earth Day Quiz</a
+        >
+        <a href="https://www.google.com/search?q=emoji+kitchen" target="_blank"
+          >Emoji Kitchen</a
+        >
+        <a href="https://www.google.com/search?q=animal+sounds" target="_blank"
+          >Animal Sounds</a
+        >
+        <a href="https://www.google.com/search?q=snake" target="_blank"
+          >Snake</a
+        >
+      </div>
+
+      <div class="tools">
+        <h2>Tools</h2>
+        <a href="https://www.google.com/search?q=flip+a+coin" target="_blank"
+          >Flip a Coin</a
+        >
+        <a href="https://www.google.com/search?q=color+picker" target="_blank"
+          >Color Picker</a
+        >
+        <a href="https://www.google.com/search?q=guitar+tuner" target="_blank"
+          >Tuner</a
+        >
+        <a href="https://www.google.com/search?q=calculator" target="_blank"
+          >Calculator</a
+        >
+        <a href="https://www.google.com/search?q=metronome" target="_blank"
+          >Metronome</a
+        >
+        <a href="https://www.google.com/search?q=spinner" target="_blank"
+          >Spinner</a
+        >
+        <a href="https://www.google.com/search?q=meditate" target="_blank"
+          >Meditate</a
+        >
+        <a href="https://www.google.com/search?q=roll+a+die" target="_blank"
+          >Roll a Die</a
+        >
+      </div>
+    </div>
+
+    <script>
+      const body = document.body;
+      const toggleBtn = document.getElementById("darkModeToggle");
+      const searchInput = document.getElementById("searchInput");
+
+      if (localStorage.getItem("darkMode") === "true") {
+        body.classList.add("dark");
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        localStorage.setItem("darkMode", body.classList.contains("dark"));
+      });
+
+      searchInput.addEventListener("input", () => {
+        const query = searchInput.value.toLowerCase();
+        document.querySelectorAll("a").forEach((link) => {
+          const text = link.textContent.toLowerCase();
+          link.classList.toggle("hidden", !text.includes(query));
+        });
+      });
+    </script>
+  </body>
+</html>
